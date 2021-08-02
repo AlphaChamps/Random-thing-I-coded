@@ -1,0 +1,15 @@
+var y = 50;
+//No black circle around the sun
+noStroke();
+draw = function() {
+ //Background
+ background(5, 242, 230);
+ //Sun
+ fill(255, 234, 0);
+ ellipse(width/2, y, 100, 100);
+ //Land
+ fill(58, 171, 75);
+ rect(0, 300, 400, 1000);
+ //Animation
+ y++;
+};
