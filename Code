@@ -1,1 +1,37 @@
-
+var number = random(0, 10);
+var integer = round(number);
+fill(3, 3, 3);
+textSize(30);
+text(number, 200, 160);
+text(integer, 230, 200);
+if(integer ===1) {
+      fill(255, 0, 0)
+}
+else if (integer === 0) {
+         fill(7, 237, 34);
+}
+else if (integer === 2) {
+        fill(214, 26, 214);
+}
+else if (integer === 3) {
+        fill(242, 223, 14);
+}
+else if (integer === 4) {
+        fill(10, 10, 250);
+}
+else if (integer === 6) {
+        fill(242, 149, 9);
+}
+else if (integer === 7) {
+        fill(18, 156, 230);
+}
+else if (integer === 8) {
+        fill(235, 226, 226);
+}
+else if (integer === 9) {
+        fill(148, 212, 168);
+}
+else {
+         fill(82, 23, 23);
+}
+ellipse(240, 260, 100, 100);
