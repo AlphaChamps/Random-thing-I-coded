@@ -1,0 +1,43 @@
+var currentScene;
+var hi = function () {
+currentScene = 1;
+background(31, 29, 29);
+textSize(20);
+text("Press Play To Start", 130, height/5);
+stroke(252, 247, 247);
+noFill();
+rect(165, height/3, 100, 70);
+textSize(30);
+text("Play", 185, 175);
+
+rect(165, height/1.8, 100, 70);
+textSize(25);
+text("Credits", 175, height/1.5);
+};
+hi();
+var creditsScene = function() {
+    currentScene = 2;
+    background(87, 25, 25);
+    textSize(20);
+    text("Made by Alphachamp" , 130, height/2);
+};
+
+var play = function() {
+    currentScene = 3;
+    background(213, 9, 232);
+    textSize(20);
+    text("test", width/2, height/2);
+};
+
+mouseClicked = function() {
+    if (mouseX >=160 && mouseX <= 270 &&
+        mouseY >= 130 && mouseY <= 200 && currentScene === 1) {
+           play(); 
+        
+    }
+    else if (mouseClicked && mouseX > 160 && mouseX <= 270 &&       mouseY >= 220 && mouseY <= 290 && currentScene === 1 ) {
+        creditsScene();
+        
+    }
+    
+};
